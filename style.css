@@ -1,11 +1,49 @@
 /* Basic CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.tablet-display,
+.mobile-display {
+    display: none;
+    margin: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-display {
+        display: none;
+    }
+
+    .tablet-display {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-display {
+        display: block;
+    }
+
+    .tablet-display {
+        display: none;
+    }
 }
