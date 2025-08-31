@@ -23,6 +23,22 @@ body {
     text-align: center;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left-side {
+    border: 2px solid red;
+    flex: 0 0 35%;
+}
+
+.right-side {
+    border: 2px solid blue;
+    flex: 1;
+}
+
 @media (max-width: 1024px) {
     body {
         justify-content: center;
@@ -35,6 +51,10 @@ body {
 
     .tablet-display {
         display: block;
+    }
+
+    .content {
+        display: none;
     }
 }
 
