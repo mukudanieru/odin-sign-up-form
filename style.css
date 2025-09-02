@@ -59,6 +59,7 @@ body {
 }
 
 .logo {
+    /* background-color: black; */
     position: absolute;
     top: 75px;
 
@@ -72,9 +73,11 @@ body {
     gap: 5px;
 }
 
-/* #main-logo {
+#main-logo {
     height: 100%;
-} */
+    width: auto;
+    fill: var(--secondary-color);
+}
 
 #logo-text {
     font-family: "norse-bold";
