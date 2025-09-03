@@ -170,7 +170,7 @@ input:focus {
     transition-delay: 0s;
 }
 
-input:invalid {
+input:focus:invalid {
     outline: 1px solid var(--destructive-color);
     transition-delay: 0s;
 }
